@@ -1,11 +1,10 @@
 # Inventory-Analysis-Case-Study
 
-The goal of this project is to analyze inventory transactional data to find insights that management could use to make better business decisions.
-
-[Click here to view the dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
+The goal of this project is to build a robust inventory stocking plan for a management team.
 
 # Overview H1
-
+The dataset for this project was sourced from Kaggle and contains inventory transactional data for a hypothetical manufacturing company. Data included in this dataset includes sales, purchasing, beginning and ending inventory, and invoicing.
+[Click here to view the dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
 
 ## **Findings:** H2
 Sales month over month experienced a steep decline for February. Many cities that saw significant sales in January had no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
