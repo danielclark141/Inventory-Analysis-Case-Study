@@ -2,7 +2,7 @@
 
 The goal of this project is to analyze inventory transactional data to create meaningful insights that a management team could use to drive business decisions. 
 
-[Original Dataset] (https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
+[Original Dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
 
 **Overview**
 
