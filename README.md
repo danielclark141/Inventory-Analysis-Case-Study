@@ -9,7 +9,6 @@ The dataset for this project was sourced from Kaggle and contains inventory tran
 # Findings:
 Sales month over month experienced a steep decline for February. Many cities that saw significant sales in January had no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
-![Alt Text]([Inventory-Analysis-Case-Study/Weekly Sales and COGS.PNG](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Weekly%20Sales%20and%20COGS.PNG))
 ![Weekly Sales and COGS](https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/177d6f01-6da1-40d5-ad8e-4a1f56cbe29e)
 
 
