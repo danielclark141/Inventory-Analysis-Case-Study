@@ -10,7 +10,7 @@ The dataset for this project was sourced from Kaggle and contains inventory tran
 During the initial data cleaning and discovery phase, I analyzed sales data and found that there are only two months of sales data available for January and February. When I charted this data, I found that February experienced a very steep drop in sales compared to January. Many cities that had significant sales in January had no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
 ![Weekly Sales and COGS](https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/177d6f01-6da1-40d5-ad8e-4a1f56cbe29e)
-
+[Click here to view the dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 Next, I conducted an analysis on inventory levels over time. I created a temporary table to store beginning inventory, purchase receipts and sales transactions organized by date for each inventory ID. To test my calculations, I compared the inventory level on the last available transaction date against the original ending inventory provided in the dataset. The ending inventory I calculated did not match the original ending inventory. 
 
