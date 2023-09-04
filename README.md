@@ -26,7 +26,7 @@ Further investigation into the data revealed the original dataset only contains 
 # Annual Demand Forecast
 I have calculated annual usage expectations by extending total YTD sales and extending those sales to annual demand. Due to the concern of missing data, I would not recommend utilizing this data for demand forecasting in the current state, however once all missing sales data has been collected, these queries can be utilized to calculate the actual annual demand.
 
-Stockout Analysis:
+# Stockout Analysis:
 The inventory levels over time analysis revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
 
 ![Missed Sales Potential](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Missed%20Sales%20Potential%20by%20ABC%20Code.PNG)
