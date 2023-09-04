@@ -13,7 +13,7 @@ The Inventory Analysis Case Study found on Kaggle was used for this analysis. Th
 # Data Discovery
 During the data discovery phase, I reviewed sales data and found that there is only sales data available for January and February. To check the data for any anomalies or identifiable trends, I charted the sales data in Tableau. I included Cost of Goods sold in my chart to understand if Any Manufacturing is profitable. 
 
-![Weekly Sales and COGS](https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/177d6f01-6da1-40d5-ad8e-4a1f56cbe29e)
+![Weekly Sales and COGS]([https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/177d6f01-6da1-40d5-ad8e-4a1f56cbe29e](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Weekly%20Sales%20and%20COGS.PNG))
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
