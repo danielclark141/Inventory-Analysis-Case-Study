@@ -8,7 +8,7 @@ The Inventory Analysis Case Study found on Kaggle was used for this analysis. Th
 
 [Click here to view the dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
 
-[Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
+[Click here to view the Tableau Dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Data Discovery
 During the data discovery phase, I reviewed sales data and found that there is only sales data available for January and February. To check the data for any anomalies or identifiable trends, I charted the sales data in Tableau. I included Cost of Goods sold in my chart to understand if Any Manufacturing is profitable. 
