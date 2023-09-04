@@ -29,7 +29,8 @@ I have calculated annual usage expectations by extending total YTD sales and ext
 Stockout Analysis:
 The inventory levels over time analysis revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
 
-Image of pie chart showing discrepancy
+![Missed Sales Potential](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Missed%20Sales%20Potential%20by%20ABC%20Code.PNG)
+[Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Inventory Replenishment Plan
 Due to the high level of stockouts, I have created a demand planning script based on economic order quantity (EOQ) to calculate target reorder points and EOQ for replenishment. I have also calculated safety stock levels for all A items by multiplying the maximum supplier lead time per item by the estimated daily usage. By utilizing this script, management can maintain healthy ranges of inventory to prevent both overstock and understock of inventory.  
