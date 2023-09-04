@@ -30,6 +30,7 @@ Stockout Analysis:
 The inventory levels over time analysis revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
 
 ![Missed Sales Potential](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Missed%20Sales%20Potential%20by%20ABC%20Code.PNG)
+
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Inventory Replenishment Plan
