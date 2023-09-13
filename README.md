@@ -1,7 +1,5 @@
 # Inventory-Analysis-Case-Study
 
-https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb5cd61428f0298f793ecc925cb600e/Inventory%20Level%20Analysis%20Script.sql#L186-L194
-
 # Objective
 The goal of this project is to analyze raw inventory data for fictional Any Manufacturing Company to reveal insights that can help the management team build a robust inventory stocking plan capable of meeting future customer demand.
 
@@ -23,7 +21,7 @@ Charting the sales data revealed that February saw an unusual drop in sales comp
 # Ending Inventory Analysis
 Next, I conducted an analysis on inventory levels over time. I created a temporary table to store beginning inventory, purchase receipts and sales transactions organized by date for each inventory ID. To test my calculations, I compared the inventory level on the last available transaction date against the original ending inventory provided in the dataset. The ending inventory levels that I calculated did not match the ending inventory provided in the original dataset.  
 
-[Link to script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql)
+https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb5cd61428f0298f793ecc925cb600e/Inventory%20Level%20Analysis%20Script.sql#L186-L194
 
 Further investigation into the data revealed the original dataset only contains sales transactions up to 2/29/2016 and purchase transactions up to 6/30/2016. The ending inventory dataset is based on data from 12/31/2016. These discrepancies further support my conclusion that there is likely missing data in this dataset. 
 
