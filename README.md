@@ -23,7 +23,7 @@ Next, I conducted an analysis on inventory levels over time. I created a tempora
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb5cd61428f0298f793ecc925cb600e/Inventory%20Level%20Analysis%20Script.sql#L186-L194
 
-Output: \
+**Output:** \
 <img src="https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6" width="200">
 
 
