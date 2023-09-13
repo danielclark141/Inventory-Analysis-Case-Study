@@ -25,6 +25,7 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb
 
 Output: \
 ![image](https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6)
+<img src="[drawing.jpg](https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6)" alt="drawing" width="200"/>
 
 
 Further investigation into the data revealed the original dataset only contains sales transactions up to 2/29/2016 and purchase transactions up to 6/30/2016. The ending inventory dataset is based on data from 12/31/2016. These discrepancies further support my conclusion that there is likely missing data in this dataset. 
