@@ -21,7 +21,7 @@ Charting the sales data revealed that February saw an unusual drop in sales comp
 # Ending Inventory Analysis
 Next, I conducted an analysis on inventory levels over time. I created a temporary table to store beginning inventory, purchase receipts and sales transactions organized by date for each inventory ID. To test my calculations, I compared the inventory level on the last available transaction date against the original ending inventory provided in the dataset. The ending inventory levels that I calculated did not match the ending inventory provided in the original dataset.  
 
-[Test](Inventory Level Analysis Script.sql)
+[Test](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql)
 
 Further investigation into the data revealed the original dataset only contains sales transactions up to 2/29/2016 and purchase transactions up to 6/30/2016. The ending inventory dataset is based on data from 12/31/2016. These discrepancies further support my conclusion that there is likely missing data in this dataset. 
 
