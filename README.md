@@ -18,6 +18,9 @@ During the data discovery phase, I reviewed sales data and found that there is o
 
 Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
+# Annual Demand Forecast
+I have calculated annual usage expectations using the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) by extending total YTD sales and extending those sales to annual demand. Due to the concern of missing data, I would not recommend utilizing this data for demand forecasting in the current state, however once all missing sales data has been collected, these queries can be utilized to calculate the actual annual demand.
+
 # Ending Inventory Analysis
 Next, I conducted an analysis on inventory levels over time using the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql). In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by inventory ID and date. I used this data to calculate daily ending inventory levels for each inventory ID in a temporary table and used this data to compare the inventory level on the last available transaction date against the original ending inventory provided in the dataset. Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 inventory IDs. These discrepancies further support my theory that there is missing transactional data in this dataset.
 
@@ -26,10 +29,11 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb
 **Output:** \
 <img src="https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6" width="200">
 
-# Annual Demand Forecast
-I have calculated annual usage expectations using the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) by extending total YTD sales and extending those sales to annual demand. Due to the concern of missing data, I would not recommend utilizing this data for demand forecasting in the current state, however once all missing sales data has been collected, these queries can be utilized to calculate the actual annual demand.
-
 # Stockout Analysis:
+I also utilized the ending inventory levels temporary table in the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to identify the frequency and duration of stockouts for each inventory ID. Stockouts can be very costly for a business due to the risk of missed sales and loss of customers. To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different statuses to identify when an item is In Stock, Out of Stock, or Backordered.
+
+https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6e29e7c709a51c8d62581ac04ffaec/Inventory%20Level%20Analysis%20Script.sql#L124-L168
+
 The inventory levels over time analysis revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
 
 ![Missed Sales Potential](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Missed%20Sales%20Potential%20by%20ABC%20Code.PNG)
