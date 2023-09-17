@@ -26,10 +26,6 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb
 **Output:** \
 <img src="https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6" width="200">
 
-I also utilized the ending inventory levels temporary table to identify stockout frequency for each inventory ID.
-
-https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ade57ccc2c6ce97b097d4b7d0943a6a57ec42cec/Inventory%20Level%20Analysis%20Script.sql#L124-L168
-
 # Annual Demand Forecast
 I have calculated annual usage expectations by extending total YTD sales and extending those sales to annual demand. Due to the concern of missing data, I would not recommend utilizing this data for demand forecasting in the current state, however once all missing sales data has been collected, these queries can be utilized to calculate the actual annual demand.
 
