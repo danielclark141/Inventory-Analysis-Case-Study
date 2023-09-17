@@ -19,16 +19,14 @@ During the data discovery phase, I reviewed sales data and found that there is o
 Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
 # Ending Inventory Analysis
-Next, I conducted an analysis on inventory levels over time using the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql). In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by Inventory ID and date. I used this data to calculate daily ending inventory levels in a temporary table and used this data to compare the inventory level on the last available transaction date against the original ending inventory provided in the dataset. Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 inventory IDs.
+Next, I conducted an analysis on inventory levels over time using the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql). In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by inventory ID and date. I used this data to calculate daily ending inventory levels for each inventory ID in a temporary table and used this data to compare the inventory level on the last available transaction date against the original ending inventory provided in the dataset. Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 inventory IDs. These discrepancies further support my theory that there is missing transactional data in this dataset.
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb5cd61428f0298f793ecc925cb600e/Inventory%20Level%20Analysis%20Script.sql#L186-L194
 
 **Output:** \
 <img src="https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6" width="200">
 
-
-
-Further investigation into the data revealed the original dataset only contains sales transactions up to 2/29/2016 and purchase transactions up to 6/30/2016. The ending inventory dataset is based on data from 12/31/2016. These discrepancies further support my conclusion that there is likely missing data in this dataset. 
+I also utilized the ending inventory levels temporary table to identify stockout frequency for each inventory ID.
 
 # Annual Demand Forecast
 I have calculated annual usage expectations by extending total YTD sales and extending those sales to annual demand. Due to the concern of missing data, I would not recommend utilizing this data for demand forecasting in the current state, however once all missing sales data has been collected, these queries can be utilized to calculate the actual annual demand.
