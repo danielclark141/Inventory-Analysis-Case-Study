@@ -38,10 +38,10 @@ After categorizing each ending inventory level by stock status, I used another t
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/aac0990a292b919340e04317d8599f9da3a623de/Inventory%20Level%20Analysis%20Script.sql#L199-L227
 
-The inventory levels over time analysis revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
+With each stockout duration calculated, I combined this data with the Annual Demand table I created with the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) and the Sales table to measure the missed sales potential throughout the 2-month period. I categorized this data into ABC Classifications using the table created in the ![ABC Analysis Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/ABC%20Analysis.sql) to help understand the distribution of potential missed sales due to essential A items, supporting B items, or less common C items. revealed stockouts totaling approximately $2.45 million worth of potential missed sales throughout the 2-month period. Over half of the missed sales, approximately $1.35 million worth, consisted of A-level items. 
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6e29e7c709a51c8d62581ac04ffaec/Inventory%20Level%20Analysis%20Script.sql#L231-L252
-
+\
 ![Missed Sales Potential](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Missed%20Sales%20Potential%20by%20ABC%20Code.PNG)
 
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
