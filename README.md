@@ -1,14 +1,14 @@
 # Inventory-Analysis-Case-Study
 
 # Objective
-The goal of this project is to analyze raw inventory data for fictional Any Manufacturing Company to reveal insights that can help the management team build a robust inventory stocking plan capable of meeting future customer demand.
+My goal for this project is to analyze raw inventory data for fictional Any Manufacturing Company to reveal insights that can help the management team build a robust inventory stocking plan capable of meeting future customer demand.
 
 # About the Data:
-The Inventory Analysis Case Study found on Kaggle was used for this analysis. This dataset contains millions of inventory movement records, including purchases, sales, beginning inventory and ending inventory. For my analysis, I chose to use MySQL to analyze the data and Tableau to visualize some of the insights found in my analysis.
+For my analysis, I used he Inventory Analysis Case Study found on Kaggle. This dataset contains millions of inventory movement records, including purchases, sales, beginning inventory and ending inventory. For my analysis, I chose to use MySQL to analyze the data and Tableau to visualize some of the insights found in my analysis.
 
-[Click here to view the dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
+[Click here to view the Kaggle dataset](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study?select=SalesFINAL12312016.csv)
 
-[Click here to view the Tableau Dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
+[Click here to view my Tableau Dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Data Discovery
 During the data discovery phase, I reviewed sales data and found that there is only sales data available for January and February. To check the data for any anomalies or identifiable trends, I charted the sales data in Tableau. I included Cost of Goods sold in my chart to understand if Any Manufacturing is profitable. 
