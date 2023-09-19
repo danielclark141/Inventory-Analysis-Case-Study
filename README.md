@@ -19,7 +19,7 @@ During the data discovery phase, I reviewed sales data and found that there is o
 Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
 # Annual Demand Forecast
-Next, I created and deployed the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) to analyze available year-to-date sales data and create an annual demand table for use in developing an inventory replenishment plan.
+I created and deployed the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) to analyze available year-to-date sales data and create an annual demand table for use in developing an inventory replenishment plan.
 
 To calculate annual demand for each item, I performed a Left Join to compare the Inventory Info table with the Sales table. Using a Case statement, I set the annual demand for items without any sales transactions to zero. For items with sales transactions, I calculated the average daily sales per item and multiplied those values by 365 days. 
 
