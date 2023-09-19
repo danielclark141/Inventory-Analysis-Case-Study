@@ -18,6 +18,8 @@ During the data discovery phase, I reviewed sales data and found that there is o
 
 Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
+[City Sales by Month.PNG](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/City%20Sales%20by%20Month.PNG)
+
 # Annual Demand Forecast
 I created and deployed the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) to analyze available year-to-date sales data and create an annual demand table for use in developing an inventory replenishment plan.
 
