@@ -11,12 +11,12 @@ For my analysis, I used the Inventory Analysis Case Study dataset found on Kaggl
 [Click here to view my Tableau Dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Data Discovery
-During the data discovery phase, I reviewed the available sales data and found there is only sales data available for January and February. To check the data for any anomalies or identifiable trends, I charted the sales data over time in Tableau. I included Cost of Goods sold in my chart to understand if the company is profitable. 
+During the data discovery phase, I reviewed the available sales data within the dataset and found there is only sales data present for January and February. To check the data for any anomalies or identifiable trends, I charted the sales data over time in Tableau. I included Cost of Goods sold in my chart to visually understand if the company is profitable. 
 
 ![Weekly Sales and COGS](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Weekly%20Sales%20and%20COGS.PNG)
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
-Charting the sales data revealed that February saw an unusual drop in sales compared to January. Many of the cities with a high volume of sales in January showed no sales in February at all. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
+Charting the sales data revealed that February saw an unusual drop in sales compared to January. To understand how this impacted each region, I created a Many of the cities with a high volume of sales in January showed no sales in February. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
 ![City Sales by Month.PNG](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/City%20Sales%20by%20Month.PNG)
 
