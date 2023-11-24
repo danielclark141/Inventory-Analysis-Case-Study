@@ -25,10 +25,11 @@ Next, I created and deployed the ![Annual Demand Script](https://github.com/dani
 
 To calculate annual demand for each item, I performed a Left Join to compare the Inventory Info table with the Sales table. Using a Case statement, I set the annual demand for items without any sales transactions to zero. For items with sales transactions, I calculated the average daily sales per item and multiplied those values by 365 days. 
 
-https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/2e6a4bb65a0f9dce435bf69f8cb26b130b9592b0/Annual%20Demand%20Script.sql#L18-L40
+https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/05b3ce6280a490d286b276194f8834682a5d63fc/Annual%20Demand%20Script.sql#L18-L40
 
 # Ending Inventory Analysis
 Next, I conducted an analysis on inventory levels over time using the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql). In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by inventory ID and date. I used this data to calculate daily ending inventory levels for each inventory ID in a temporary table and used this data to compare the inventory level on the last available transaction date against the original ending inventory provided in the dataset. 
+\
 \
 Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 inventory IDs. These discrepancies further support my theory that there is missing transactional data in this dataset.
 
