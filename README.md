@@ -16,7 +16,7 @@ During the data discovery phase, I reviewed the available sales data within the 
 ![Weekly Sales and COGS](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Weekly%20Sales%20and%20COGS.PNG)
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
-Charting the sales data revealed that February saw an unusual drop in sales compared to January. To understand how this impacted each region, I created a Many of the cities with a high volume of sales in January showed no sales in February. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
+Charting the sales data revealed that February saw an unusual drop in sales compared to January. To understand how this impacted each region, I created a side by side horizontal bar chart to compare monthly sales by city. This insight revealed that many of the cities with a high volume of sales in January showed no sales in February. This pattern raises the possibility that there is data missing from the original dataset or the business experienced a disruption that impacted sales in the month of February.
 
 ![City Sales by Month.PNG](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/City%20Sales%20by%20Month.PNG)
 
