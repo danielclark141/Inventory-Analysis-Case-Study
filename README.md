@@ -1,7 +1,7 @@
 # Inventory-Analysis-Case-Study
 
 # Objective
-My goal for this project is to analyze raw inventory data for fictional Any Manufacturing Company to reveal insights that can help the management team build a robust inventory stocking plan capable of meeting future customer demand.
+My goal for this project is to analyze raw inventory data for a fictional company to reveal insights that can help the management team build a robust inventory stocking plan capable of meeting future customer demand.
 
 # About the Data:
 For my analysis, I used he Inventory Analysis Case Study found on Kaggle. This dataset contains millions of inventory movement records, including purchases, sales, beginning inventory and ending inventory. For my analysis, I chose to use MySQL to analyze the data and Tableau to visualize some of the insights found in my analysis.
