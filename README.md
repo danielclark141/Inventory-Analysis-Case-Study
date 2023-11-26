@@ -62,7 +62,7 @@ The high level of stockouts discovered in my analysis revealed a need for a more
 
 Since A items are the highest moving product and stockouts of these items could have the most negative impact on the business, I decided to implement a safety stock program on A items only to ensure there is always adequate inventory on hand to cover supplier lead time flunctuations. I calculated these safety stock levels by multiplying the maximum supplier lead time per item by the estimated daily usage. 
 
-https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/9545e62a0eb0fc02a843dafdad76d71f331c2e57/Demand%20Planning.sql#L48-L73
+https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/f618222d8643b858089fa69e2dc19a7c10345c08/Demand%20Planning.sql#L48-L73
 
 By utilizing this script, management can maintain healthy ranges of inventory to prevent both overstock and understock of inventory.  
 
