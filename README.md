@@ -58,7 +58,11 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6
 [Link to Tableau dashboard](https://public.tableau.com/app/profile/daniel4029/viz/InventoryAnalysisCaseStudy_16938541269020/Dashboard1)
 
 # Inventory Replenishment Plan
-The high level of stockouts discovered in my analysis revealed a need for a more robust inventory replenishment plan. By developing the [Demand Planning Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Demand%20Planning.sql) I created a new replenishment plan based on economic order quantity (EOQ) to calculate target reorder points and EOQ for replenishment. I have also calculated safety stock levels for all A items by multiplying the maximum supplier lead time per item by the estimated daily usage. By utilizing this script, management can maintain healthy ranges of inventory to prevent both overstock and understock of inventory.  
+The high level of stockouts discovered in my analysis revealed a need for a more robust inventory replenishment plan. By developing the [Demand Planning Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Demand%20Planning.sql) I created a new replenishment plan based on economic order quantity (EOQ) to calculate target reorder points and EOQ for replenishment. 
+
+Since A items are the highest moving product and stockouts of these items could have the most negative impact on the business, I decided to implement a safety stock program on A items only to ensure there is always adequate inventory on hand to cover supplier lead time flunctuations. I calculated these safety stock levels by multiplying the maximum supplier lead time per item by the estimated daily usage. 
+
+By utilizing this script, management can maintain healthy ranges of inventory to prevent both overstock and understock of inventory.  
 
 # Conclusion
 This analysis revealed that there is missing data needed to perform an accurate deep-dive analysis on company ABC. The data also revealed that the current inventory replenishment process is not meeting expectations and there is room to improve service levels and ordering accuracy by implementing the suggested demand planning program outlined in this project. By addressing the missing data and following the new inventory replenishment structure found in my analysis, Any Manufacturing Company will have a robust inventory management system capable of meeting future customer demand and maximizing profitability.
