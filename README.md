@@ -43,7 +43,7 @@ To assess the performance of the current replenishment program, I utilized the e
 
 To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different stock statuses to identify when an item is In Stock, Out of Stock, or Backordered.
 
-https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6e29e7c709a51c8d62581ac04ffaec/Inventory%20Level%20Analysis%20Script.sql#L124-L168
+https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/b778f95538d9214eecc369c7133c334a35aad1a3/Inventory%20Level%20Analysis%20Script.sql#L124-L162
 
 After categorizing each ending inventory level by stock status, I used another temp table titled Inventory Stockouts to calculate the duration in days of each stockout occurrence. I chose to omit any stockouts dated 1/1/2016 since this was the starting inventory date and it may be possible that these items were not being stocked at that time. 
 
