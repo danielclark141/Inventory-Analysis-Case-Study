@@ -41,7 +41,7 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb
 # Stockout Analysis:
 To assess the performance of the current replenishment program, I utilized the ending inventory levels temp table created above to build the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to identify the frequency and average duration of stockouts for each item. Stockouts can lead directly to loss of sales and customers to competitors. 
 
-To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different stock statuses to identify when an item is In Stock, Out of Stock, or Backordered.
+To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different stock statuses to identify when an item is In Stock, Out of Stock, or Backordered and utilized a CTE expression to calculate the number of days between each status change.
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6e29e7c709a51c8d62581ac04ffaec/Inventory%20Level%20Analysis%20Script.sql#L124-L168
 
