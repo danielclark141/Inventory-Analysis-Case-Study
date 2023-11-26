@@ -39,11 +39,13 @@ https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb
 <img src="https://github.com/danielclark141/Inventory-Analysis-Case-Study/assets/69767270/32e19a04-5c10-40db-b210-531ec65971a6" width="200">
 
 # Stockout Analysis:
-Using the ending inventory levels temporary table I created above, I built the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to identify the frequency and duration of stockouts for each inventory ID. Stockouts can be very costly for a business due to the risk of missed sales and potential loss of customers. To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different stock statuses to identify when an item is In Stock, Out of Stock, or Backordered.
+I utilized the ending inventory levels temp table created above to build the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to identify the frequency and average duration of stockouts for each item.
+
+To easily identify stockout occurrences, I created a temporary table using the below scripts to categorize each ending inventory level by different stock statuses to identify when an item is In Stock, Out of Stock, or Backordered.
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/ddf28e55ed6e29e7c709a51c8d62581ac04ffaec/Inventory%20Level%20Analysis%20Script.sql#L124-L168
 
-After categorizing each ending inventory level by stock status, I used another temporary table titled Inventory Stockouts to calculate the duration in days of each stockout occurrence. I chose to omit any stockouts dated 1/1/2016 since this was the starting inventory date and it may be possible that these items were not being stocked at that time. 
+After categorizing each ending inventory level by stock status, I used another temp table titled Inventory Stockouts to calculate the duration in days of each stockout occurrence. I chose to omit any stockouts dated 1/1/2016 since this was the starting inventory date and it may be possible that these items were not being stocked at that time. 
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/aac0990a292b919340e04317d8599f9da3a623de/Inventory%20Level%20Analysis%20Script.sql#L199-L227
 
