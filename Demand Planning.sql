@@ -15,9 +15,9 @@ USE inventory_analysis;
 -- Calculating Average Purchase Lead Time in a temp table
 DROP TEMPORARY TABLE IF EXISTS temp_lead_time;
 CREATE TEMPORARY TABLE temp_lead_time (
-	Inventory_id			VARCHAR(75)	PRIMARY KEY,
-    Average_Lead_Time_Days	INT			NOT NULL,
-    Max_Lead_Time_Days		INT			NOT NULL
+	Inventory_id		VARCHAR(75)	PRIMARY KEY,
+	Average_Lead_Time_Days	INT		NOT NULL,
+	Max_Lead_Time_Days	INT		NOT NULL
 );
 
 -- Inserting average lead time days rounded into temp table using DATEDIFF between po receipt date and po order date
@@ -25,7 +25,7 @@ INSERT INTO temp_lead_time (Inventory_id, Average_Lead_Time_Days, Max_Lead_Time_
 SELECT 
 	por.Inventory_id,
 	ROUND(AVG(DATEDIFF(por.Receiving_Date, po.PO_Date))) AS Average_Lead_Time_Days,
-    ROUND(MAX(DATEDIFF(por.Receiving_Date, po.PO_Date))) AS Max_Lead_Time
+	ROUND(MAX(DATEDIFF(por.Receiving_Date, po.PO_Date))) AS Max_Lead_Time
 FROM purchase_order_receipts por
 INNER JOIN purchase_order_lines pol
 	ON por.PO_Number = pol.PO_Number
@@ -39,27 +39,27 @@ GROUP BY por.Inventory_id;
 DROP TABLE IF EXISTS inventory_reordering;
 CREATE TABLE inventory_reordering (
 	Inventory_id	VARCHAR(75)	PRIMARY KEY,
-    Reorder_Point	INT			NOT NULL,
-    EOQ				INT			NOT NULL,
-    Safety_Stock	INT			NULL,
-	Lead_Time		INT			NOT NULL
+	Reorder_Point	INT		NOT NULL,
+	EOQ		INT		NOT NULL,
+	Safety_Stock	INT		NULL,
+	Lead_Time	INT		NOT NULL
 );
 
 INSERT INTO Inventory_Reordering (Inventory_id, Reorder_Point, EOQ, Safety_Stock, Lead_Time)
 SELECT 
 	t.Inventory_id,
 -- Reorder Point (daily sales * AVG lead time) rounded up to nearest integer.
-    CEILING(t.Average_Lead_Time_Days * (d.Total_Demand / 365)) AS Reorder_Point,
+	CEILING(t.Average_Lead_Time_Days * (d.Total_Demand / 365)) AS Reorder_Point,
     
 -- Calculating EOQ rounded to nearest integer.
 -- Formula: square root of: [2 * (D: Annual Demand) * (S: Order Cost)] / (H: Holding Cost) - (S: $30), (H: $10). 
 	ROUND(SQRT((2 * d.Total_Demand * 30) / 10)) AS EOQ,
     
 -- Adding Safety Stock Days for A class items only based on Max Lead Time minus Average Lead Time.
-	 CASE 
+	CASE 
 		WHEN abc.ABC_Code LIKE 'A' THEN CEILING( (t.Max_Lead_Time_Days - t.Average_Lead_Time_Days) * (d.Total_Demand / 365) )
         ELSE 0
-    END AS Safety_Stock,
+	END AS Safety_Stock,
 	t.Average_Lead_Time_Days
 FROM temp_lead_time t
 INNER JOIN annual_demand d
