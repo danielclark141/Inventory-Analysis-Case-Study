@@ -28,10 +28,10 @@ To calculate annual demand for each item, I performed a Left Join to compare the
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/05b3ce6280a490d286b276194f8834682a5d63fc/Annual%20Demand%20Script.sql#L18-L40
 
 # Ending Inventory Analysis
-After I calculated annual demand for each item, I conducted an analysis on inventory levels over time by developing the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to assess the current replenishment program. In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by inventory ID and date. I used this data to calculate daily ending inventory levels for each inventory ID in a temporary table and used this data to compare calculated inventory levels on the last available transaction date against the ending inventory file provided in the dataset to test my theory that there are missing transactions in the dataset. 
+After I calculated annual demand for each item, I conducted an analysis on inventory levels over time by developing the ![Inventory Levels Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Inventory%20Level%20Analysis%20Script.sql) to assess the current replenishment program. In this script, I created an inventory transactions table consisting of beginning inventory, purchase transactions, and sales transactions organized by item and date. I used this data to calculate daily ending inventory levels for each item in a temporary table and used this data to compare calculated inventory levels on the last available transaction date against the ending inventory file provided in the dataset to test my theory that there are missing transactions in the dataset. 
 \
 \
-Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 inventory IDs. These discrepancies further support my theory that there is missing transactional data in this dataset.
+Using the below script, I confirmed that the ending inventory levels in my calculations did not match the original dataset for approximately 191,000 items. These discrepancies further support my theory that there is missing transactional data in this dataset.
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/1dc24d826cb5cd61428f0298f793ecc925cb600e/Inventory%20Level%20Analysis%20Script.sql#L186-L194
 
