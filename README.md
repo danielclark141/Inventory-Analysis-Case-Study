@@ -23,7 +23,7 @@ Charting the sales data revealed that February saw an unusual drop in sales comp
 # Annual Demand Forecast
 Since I did not have enough information to conclude data may be missing, I chose to continue my analysis by creating and deploying the ![Annual Demand Script](https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/main/Annual%20Demand%20Script.sql) to create an annual demand table from the available sales data for use in developing an inventory replenishment plan.
 
-To calculate annual demand for each item, I performed a Left Join to compare the Inventory Info table with the Sales table. This allowed me to set annual demand for any items without any sales transactions to zero by using a Case statement. For items with sales transactions, I calculated the average daily sales per item and multiplied those values by 365 days. 
+To calculate annual demand for each item, I performed a Left Join to compare the Inventory Info table with the Sales table. This allowed me to set annual demand for items without any sales transactions to zero by using a Case statement. For items with sales transactions, I calculated the average daily sales per item and multiplied those values by 365 days. 
 
 https://github.com/danielclark141/Inventory-Analysis-Case-Study/blob/05b3ce6280a490d286b276194f8834682a5d63fc/Annual%20Demand%20Script.sql#L18-L40
 
